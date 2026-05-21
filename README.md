@@ -16,17 +16,11 @@ BankIQ enables users to upload banking, insurance, and financial policy document
 
 Frontend Application:
 
-[Add Frontend Deployment URL Here]
+https://bankiq-ai-assistant-018.streamlit.app/
 
 Backend API:
 
-[Add Backend Deployment URL Here]
-
----
-
-## Demo Video
-
-[Add Demo Video Link Here]
+https://bankiq-ai-assistant-production.up.railway.app
 
 ---
 
