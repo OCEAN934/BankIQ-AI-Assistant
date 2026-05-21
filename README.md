@@ -1,5 +1,11 @@
 # BankIQ AI Assistant
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-red)
+![FAISS](https://img.shields.io/badge/FAISS-Vector_Search-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Enterprise-grade AI-powered Banking Intelligence Assistant built using Retrieval-Augmented Generation (RAG), FAISS Vector Search, Cross-Encoder Reranking, and LLM-based grounded reasoning.
 
 BankIQ enables users to upload banking, insurance, and financial policy documents and instantly interact with them through a conversational AI interface that provides contextual answers, source citations, confidence scoring, and intelligent follow-up suggestions.
@@ -336,6 +342,15 @@ Frontend:
 ```text
 http://localhost:8501
 ```
+# Demo Workflow
+
+1. Upload a banking or insurance document.
+2. Wait for indexing and dynamic question generation.
+3. Select a suggested question or ask your own.
+4. BankIQ retrieves relevant document sections.
+5. Retrieved chunks are reranked using a Cross-Encoder model.
+6. A grounded response is generated using the LLM.
+7. Confidence score and source citations are displayed.
 
 ---
 
@@ -473,6 +488,17 @@ The architecture successfully supports document intelligence workflows for banki
 - Real-time streaming responses
 - Redis caching
 - Analytics dashboard
+
+---
+# Author
+
+Varun Wadhwa
+
+B.Tech Computer Science Engineering (AI & ML)
+
+Project: BankIQ AI Assistant
+
+Focused on Retrieval-Augmented Generation (RAG), LLM Applications, AI Engineering and Intelligent Document Systems.
 
 ---
 
