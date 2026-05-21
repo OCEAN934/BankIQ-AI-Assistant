@@ -41,6 +41,18 @@ BankIQ addresses this challenge by combining:
 to deliver accurate and explainable answers directly from uploaded documents.
 
 ---
+## Key Capabilities
+
+| Feature | Description |
+|----------|-------------|
+| RAG Pipeline | Grounded responses using retrieved document context |
+| FAISS Vector Search | Semantic retrieval of relevant document chunks |
+| Cross-Encoder Reranking | Improves retrieval precision before generation |
+| Conversation Memory | Supports contextual follow-up questions |
+| Dynamic Suggestions | Auto-generated document-specific starter questions |
+| Confidence Scoring | Indicates reliability of generated responses |
+| Source Citations | Provides traceability and explainability |
+| Multi-Format Upload | Supports PDF, TXT and DOCX documents |
 
 # Key Features
 
@@ -149,6 +161,15 @@ The assistant is explicitly constrained to:
 
 <img width="2764" height="4564" alt="image" src="https://github.com/user-attachments/assets/75ad6f9a-04de-40be-8aa2-fefd678f781a" />
 
+### Architecture Highlights
+
+- FastAPI backend for scalable API serving
+- FAISS vector database for semantic search
+- SentenceTransformer embeddings for dense retrieval
+- CrossEncoder reranking layer for improved relevance
+- Groq-powered LLM reasoning engine
+- Streamlit frontend for interactive document intelligence
+- Citation and confidence generation layer for explainability
 
 ---
 
@@ -385,6 +406,19 @@ Checks API status.
 - Compliance Documents
 
 ---
+# System Innovations
+
+Unlike a traditional chatbot, BankIQ incorporates several advanced retrieval and grounding mechanisms:
+
+- Cross-Encoder Reranking to improve retrieval relevance
+- Dynamic document-specific question generation
+- Confidence estimation based on supporting evidence
+- Context-aware conversation memory
+- Structured answer generation for policy reasoning
+- Source-backed responses for transparency and trust
+- Hallucination reduction through strict context grounding
+
+These enhancements significantly improve answer quality, explainability, and user trust.
 
 # Evaluation Highlights
 
@@ -414,6 +448,19 @@ Implemented:
 
 -> FastAPI Backend
 
+---
+# Results
+
+The system was evaluated on complex banking and insurance policy documents and demonstrated:
+
+- Accurate semantic retrieval using FAISS
+- Strong citation-backed responses
+- Reduced hallucinations through grounded prompting
+- Effective handling of multi-clause policy reasoning
+- Dynamic question generation tailored to uploaded documents
+- Confidence-aware response generation
+
+The architecture successfully supports document intelligence workflows for banking, insurance, compliance, and customer-support use cases.
 ---
 
 # Future Improvements
