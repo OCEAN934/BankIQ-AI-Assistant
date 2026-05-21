@@ -8,7 +8,7 @@ from fastapi import (
 import shutil
 import os
 
-import PyPDF2
+from pypdf import PdfReader
 
 from docx import Document
 
@@ -48,9 +48,7 @@ def extract_text_for_suggestions(
 
         with open(file_path, "rb") as file:
 
-            pdf_reader = PyPDF2.PdfReader(
-                file
-            )
+            pdf_reader = PdfReader(file)
 
             for page in pdf_reader.pages[:5]:
 
