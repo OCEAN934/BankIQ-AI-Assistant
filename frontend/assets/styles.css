@@ -1,0 +1,732 @@
+/* =========================
+   GLOBAL APP
+========================= */
+
+.stApp {
+
+    background:
+        radial-gradient(circle at top left, #172554 0%, transparent 30%),
+        radial-gradient(circle at bottom right, #0F172A 0%, transparent 30%),
+        #020617;
+
+    color: white;
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* =========================
+   STREAMLIT LAYOUT FIX
+========================= */
+
+.block-container {
+
+    padding-top: 4rem;
+
+    max-width: 95%;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+[data-testid="stSidebar"] {
+
+    background:
+        linear-gradient(
+            180deg,
+            #0F172A 0%,
+            #111827 100%
+        );
+
+    border-right: 1px solid #1E293B;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-container {
+
+    margin-bottom: 45px;
+
+    animation: fadeIn 1s ease;
+}
+
+
+.hero-badge {
+
+    display: inline-block;
+
+    background: rgba(37, 99, 235, 0.15);
+
+    border: 1px solid rgba(59, 130, 246, 0.3);
+
+    color: #93C5FD;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+    backdrop-filter: blur(8px);
+}
+
+
+.hero-title {
+
+    font-size: 64px;
+
+    font-weight: 800;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+
+    text-shadow:
+        0 0 20px rgba(96,165,250,0.15);
+
+    background: linear-gradient(
+        90deg,
+        #FFFFFF,
+        #93C5FD
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hero-subtitle {
+
+    font-size: 20px;
+
+    color: #94A3B8;
+
+    max-width: 900px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   METRIC CARDS
+========================= */
+
+.metric-card {
+
+    background: rgba(15, 23, 42, 0.72);
+
+    border: 1px solid rgba(51, 65, 85, 0.5);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    min-height: 260px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 0 20px rgba(59,130,246,0.08);
+}
+
+
+.metric-card:hover {
+
+    transform: translateY(-6px);
+
+    border: 1px solid #3B82F6;
+
+    box-shadow:
+        0 0 30px rgba(59,130,246,0.2);
+}
+
+
+.metric-card h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 18px;
+
+    color: #60A5FA;
+}
+
+
+.metric-card h3 {
+
+    color: white;
+
+    margin-bottom: 18px;
+
+    min-height: 72px;
+
+    line-height: 1.2;
+}
+
+
+.metric-card p {
+
+    color: #94A3B8;
+
+    line-height: 1.7;
+
+    margin-top: auto;
+}
+
+
+/* =========================
+   GLASS CONTAINERS
+========================= */
+
+.glass-card {
+
+    background: rgba(15, 23, 42, 0.72);
+
+    border: 1px solid rgba(51, 65, 85, 0.5);
+
+    backdrop-filter: blur(14px);
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    margin-top: 20px;
+
+    box-shadow:
+        0 0 25px rgba(0,0,0,0.25);
+}
+
+
+/* =========================
+   USER MESSAGE
+========================= */
+
+.user-message {
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563EB,
+            #1D4ED8
+        );
+
+    border-radius: 18px;
+
+    padding: 16px 18px;
+
+    color: white;
+
+    width: fit-content;
+
+    max-width: 80%;
+
+    margin-left: auto;
+
+    margin-bottom: 12px;
+
+    box-shadow:
+        0 4px 18px rgba(37,99,235,0.25);
+}
+
+
+/* =========================
+   ASSISTANT MESSAGE
+========================= */
+
+.assistant-message {
+
+    background:
+        rgba(15, 23, 42, 0.88);
+
+    border: 1px solid rgba(59,130,246,0.12);
+
+    border-radius: 18px;
+
+    padding: 18px 20px;
+
+    color: #E2E8F0;
+
+    margin-bottom: 12px;
+
+    line-height: 1.65;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,0.18);
+}
+
+
+/* =========================
+   SOURCES
+========================= */
+
+.source-box {
+
+    background: rgba(15, 23, 42, 0.65);
+
+    border: 1px solid rgba(96, 165, 250, 0.16);
+
+    border-radius: 16px;
+
+    padding: 16px 18px;
+
+    margin-top: 12px;
+
+    margin-bottom: 12px;
+
+    color: #CBD5E1;
+}
+
+
+div[data-testid="stExpander"] {
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   FILE UPLOADER
+========================= */
+
+[data-testid="stFileUploader"] {
+
+    background: rgba(15, 23, 42, 0.85);
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 18px;
+}
+
+
+/* =========================
+   CHAT INPUT
+========================= */
+
+.stChatInputContainer {
+
+    background: rgba(15, 23, 42, 0.92);
+
+    border: 1px solid #334155;
+
+    border-radius: 18px;
+
+    padding: 10px;
+}
+
+
+/* =========================
+   SUGGESTED QUESTIONS
+========================= */
+
+.suggested-title {
+
+    margin-top: 8px;
+
+    margin-bottom: 10px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #94A3B8;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.stButton > button {
+
+    width: 100%;
+
+    background:
+        rgba(15, 23, 42, 0.85);
+
+    border:
+        1px solid rgba(59,130,246,0.15);
+
+    border-radius: 14px;
+
+    color: #E2E8F0;
+
+    padding: 12px 16px;
+
+    text-align: left;
+
+    transition: all 0.25s ease;
+
+    margin-bottom: 10px;
+}
+
+
+.stButton > button:hover {
+
+    border:
+        1px solid rgba(59,130,246,0.45);
+
+    background:
+        rgba(30, 41, 59, 0.95);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 0 16px rgba(59,130,246,0.12);
+}
+
+
+/* =========================
+   CHAT TITLE SPACING
+========================= */
+
+div[data-testid="stMarkdownContainer"] h3 {
+
+    margin-bottom: 0.4rem;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-thumb {
+
+    background: #334155;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+CHAT CONTAINER POLISH
+========================================= */
+
+.stChatMessage {
+    margin-bottom: 0.65rem !important;
+}
+
+
+/* =========================================
+CURRENT ANALYSIS + HISTORY TITLES
+========================================= */
+
+.analysis-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7DA2FF;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    opacity: 0.9;
+}
+
+
+/* =========================================
+CHAT MESSAGE REFINEMENT
+========================================= */
+
+.user-message,
+.assistant-message {
+    line-height: 1.72;
+    font-size: 0.96rem;
+}
+
+
+/* =========================================
+ASSISTANT MESSAGE PREMIUM DEPTH
+========================================= */
+
+.assistant-message {
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,18,45,0.96) 0%,
+            rgba(7,13,34,0.98) 100%
+        );
+
+    border:
+        1px solid rgba(82,115,255,0.14);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.015),
+        0 10px 30px rgba(0,0,0,0.28);
+
+    transition:
+        transform 0.18s ease,
+        border 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.assistant-message:hover {
+
+    transform: translateY(-1px);
+
+    border:
+        1px solid rgba(96,165,250,0.24);
+
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.02),
+        0 16px 34px rgba(0,0,0,0.34);
+}
+
+
+/* =========================================
+USER MESSAGE REFINEMENT
+========================================= */
+
+.user-message {
+
+    box-shadow:
+        0 10px 25px rgba(37,99,235,0.22);
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease;
+}
+
+.user-message:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 14px 28px rgba(37,99,235,0.30);
+}
+
+
+/* =========================================
+SUGGESTED QUESTION BUTTONS
+========================================= */
+
+.stButton > button {
+
+    min-height: 58px !important;
+
+    border-radius: 16px !important;
+
+    border:
+        1px solid rgba(96,165,250,0.16) !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(10,18,45,0.88) 0%,
+            rgba(8,14,36,0.96) 100%
+        ) !important;
+
+    transition:
+        all 0.18s ease !important;
+
+    font-weight: 500 !important;
+
+    line-height: 1.45 !important;
+
+    padding:
+        0.8rem 1rem !important;
+}
+
+.stButton > button:hover {
+
+    border:
+        1px solid rgba(96,165,250,0.34) !important;
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 10px 24px rgba(37,99,235,0.18);
+}
+
+
+/* =========================================
+CITATION SECTION COMPACTNESS
+========================================= */
+
+.streamlit-expanderHeader {
+
+    font-size: 0.93rem !important;
+
+    border-radius: 12px !important;
+
+    min-height: 44px !important;
+}
+
+
+/* =========================================
+SOURCE BOX COMPACT REFINEMENT
+========================================= */
+
+.source-box {
+
+    padding:
+        0.72rem 0.85rem !important;
+
+    margin-bottom:
+        0.55rem !important;
+
+    border-radius:
+        14px !important;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8,14,36,0.96) 0%,
+            rgba(6,10,28,0.98) 100%
+        );
+
+    border:
+        1px solid rgba(96,165,250,0.12);
+
+    transition:
+        all 0.18s ease;
+}
+
+.source-box:hover {
+
+    border:
+        1px solid rgba(96,165,250,0.26);
+
+    transform:
+        translateY(-1px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.22);
+}
+
+
+/* =========================================
+CHAT INPUT PREMIUM FEEL
+========================================= */
+
+.stChatInputContainer {
+
+    background:
+        rgba(5,10,28,0.96) !important;
+
+    border-top:
+        1px solid rgba(96,165,250,0.08);
+}
+
+
+/* =========================================
+SCROLLBAR POLISH
+========================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050816;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        rgba(96,165,250,0.22);
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        rgba(96,165,250,0.38);
+}
+
+/* =========================================
+CONFIDENCE BADGE
+========================================= */
+
+.confidence-badge {
+
+    display: inline-block;
+
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+    padding: 6px 14px;
+
+    border-radius: 999px;
+
+    background: rgba(37, 99, 235, 0.14);
+
+    border: 1px solid rgba(96, 165, 250, 0.22);
+
+    color: #93C5FD;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+}
+
+.confidence-badge {
+
+    display:inline-block;
+
+    margin-top:8px;
+    margin-bottom:12px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    border:1px solid;
+
+    font-size:12px;
+    font-weight:600;
+
+    background:rgba(255,255,255,0.03);
+
+    letter-spacing:0.3px;
+}
