@@ -1,5 +1,7 @@
 import streamlit as st
 
+from pathlib import Path
+
 from components.sidebar import render_sidebar
 from components.uploader import render_uploader
 from components.chat_ui import render_chat
@@ -15,7 +17,16 @@ st.set_page_config(
 
 def load_css():
 
-    with open("assets/styles.css") as file:
+    css_path = (
+        Path(__file__).parent
+        / "assets"
+        / "styles.css"
+    )
+
+    with open(
+        css_path,
+        encoding="utf-8"
+    ) as file:
 
         st.markdown(
             f"<style>{file.read()}</style>",
